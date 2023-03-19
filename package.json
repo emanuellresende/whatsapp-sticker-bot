@@ -1,0 +1,19 @@
+{
+  "name": "whatsapp-sticker-bot",
+  "version": "1.0.0",
+  "description": "Sticker Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emanuellresende/whatsapp-sticker-bot.git"
+  },
+  "author": "Emanuel Melo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emanuellresende/whatsapp-sticker-bot/issues"
+  },
+  "homepage": "https://github.com/emanuellresende/whatsapp-sticker-bot#readme"
+}
