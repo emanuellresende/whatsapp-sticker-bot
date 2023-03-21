@@ -27,14 +27,14 @@ client.on( "message_create", message => {
 client.initialize();
 
 const generateSticker = async ( message, sender ) => {
-  const { body, type, reply } = message;
+  const { body, type } = message;
   if ( type === "image" ) {
     try {
       const { data } = await message.downloadMedia();
       const image = await new MessageMedia( "image/jpeg", data, "image.jpg" );
       await client.sendMessage( sender, image, { sendMediaAsSticker: true } );
     } catch ( e ) {
-      reply( "❌ Error To Process Image" );
+      message.reply( "❌ Error To Process Image" );
     }
   } else {
     try {
@@ -44,7 +44,7 @@ const generateSticker = async ( message, sender ) => {
       const image = await new MessageMedia( "image/jpeg", returnedB64, "image.jpg" );
       await client.sendMessage( sender, image, { sendMediaAsSticker: true } );
     } catch ( e ) {
-      reply( "❌ Unable to generate a sticker with this link" );
+      message.reply( "❌ Unable to generate a sticker with this link" );
     }
   }
 }
