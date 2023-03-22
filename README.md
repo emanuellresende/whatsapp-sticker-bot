@@ -102,6 +102,11 @@ Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de
 
 Clone o projeto
 
+Crie o arquivo .env, e coloque a variavel: WHATSAPP_NUMBER ( Sem o numero 9 Extra )
+```bash
+  WHATSAPP_NUMBER = "XXXXXXXXX"
+```
+
 ```bash
   git clone https://github.com/emanuellresende/whatsapp-sticker-bot
 ```
